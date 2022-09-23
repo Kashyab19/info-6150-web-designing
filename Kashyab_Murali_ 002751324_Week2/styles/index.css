@@ -1,0 +1,172 @@
+:root{
+    --primary: #343F3E;
+    --secondary: #FFE1A8;
+}
+
+*{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+h1{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+@media only screen and (device-width: 768px) {
+    .main-container{
+        width: 100%;
+    }
+}
+.main-container div {
+    display: flex;
+}
+.navigation-bar-container{
+    margin: 10px 10px 50px 10px;
+    height: 15vh;
+    width: 100%;
+}
+
+.navigation-bar nav{
+    float: right;
+}
+.navigation-bar ul{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.navigation-bar li, .navigation-bar a{
+    cursor: pointer;
+    padding-left: 30px;
+    display: inline;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.navigation-bar span{
+    padding: 15px 15px 15px 15px;
+}
+
+.navigation-bar span:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 10%;
+}
+
+.profile-container, .education-container{
+    width: 100%;
+    height: auto;
+    margin: 30px 30px 30px 30px;
+}
+
+.profile-container div, .education-container div{
+    display: inline-block;
+}
+
+.photo-container{
+    width: 30%;
+    height: 50vh;
+    margin-left: 20px;
+    float: left;
+}
+
+.photo-container img{
+    float: right;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.basic-details-container{
+    width: 50%;
+    margin: 5px 10px 10px 20px;
+    font-size: 50px;
+    color: var(--secondary);
+    font-weight: bolder;
+    box-shadow: var(--secondary) 1px 5px 3px 3px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.basic-details-container p{
+    font-size: 30px;
+}
+
+.profile-photo {
+    width: 30vh;
+    height: 30vh;
+}
+
+.social-icons a{
+    color: var(--secondary);
+}
+
+.social-icons i{
+    padding-right: 10px;
+}
+
+/* 
+Education section styling here */
+.education-container{
+    grid-gap: 10%;
+}
+
+.education-container-1, .education-container-2{
+    width: 40%;
+    box-shadow: var(--secondary) 1px 5px 3px 3px;
+    border-radius: 25px;
+}
+
+.logo{
+    width: 70px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary);
+    margin-left: 40%;
+}
+
+
+.description-container{
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+}
+
+.description-container p{
+    font-size: large;
+}
+
+.footer{
+    display: flex;
+    margin-top: 50px;
+}
+
+form{
+    padding: 20px 20px 20px 20px;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+input{
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+button{
+    margin-left: 40%;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+button:hover{
+    box-shadow: var(--secondary) 1px 5px 3px 3px;
+}
+
+
+

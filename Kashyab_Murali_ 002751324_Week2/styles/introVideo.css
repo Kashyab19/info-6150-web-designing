@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+}
+
+:root{
+    --primary: #343F3E;
+    --secondary: #FFE1A8;
+}
+
+*{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.navigation-bar-container{
+    font-size: x-large;
+    height: 8vh;
+    width: 100%;
+}
+
+.navigation-bar ul{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.navigation-bar li, .navigation-bar a{
+    cursor: pointer;
+    display: inline;
+    color: var(--secondary);
+}
+
+.navigation-bar span{
+    padding: 15px 15px 15px 15px;
+}
+
+.navigation-bar span:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 10%;
+}
+
+.intro-video{
+    box-shadow: var(--secondary) 1px 5px 3px 3px;
+    border-radius: 25px;
+}
