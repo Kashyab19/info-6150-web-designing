@@ -1,0 +1,26 @@
+%btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+
+    &:hover {
+        transform: scale(.98);
+        font-weight: bolder;
+        box-shadow: 2px 5px 5px white;
+    }
+}
+
+
+.styled-btn{
+    @extend %btn;
+    display: inline-block;
+    color: #fff;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    padding: 9px 15px;
+    background-color: $secondary-color;
+    cursor: pointer;
+    border-radius: 5px;
+}

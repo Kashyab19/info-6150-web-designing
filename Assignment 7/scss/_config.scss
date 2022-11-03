@@ -1,0 +1,27 @@
+$font-stack: Inter, sans-serif;
+$primary-color: #30343F;
+$secondary-color: orange;
+$font-color-dark-theme: #fff;
+$light-color: rgb(243, 243, 190);
+
+@mixin set-background($font-color-dark-theme) {
+    background-color: $font-color-dark-theme;
+    color: setting-text-color($font-color-dark-theme);
+}
+
+
+@function setting-text-color($font-color-dark-theme) {
+    @if(lightness($font-color-dark-theme) > 70) {
+        @return #333;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+$spaceamounts: (1,2,3,4,5);
+@each $space in $spaceamounts {
+    .my-#{$space} {
+        margin: #{$space} rem 0;
+    }
+}
