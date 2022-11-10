@@ -25,6 +25,6 @@ mongoose.connect(
 
 const credRouter = require("./routes/Endpoints");
  
-app.use("/api/credentials", credRouter);
+app.use("/api/users", credRouter);
 
 module.exports = app;
