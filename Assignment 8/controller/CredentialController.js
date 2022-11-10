@@ -121,3 +121,13 @@ exports.deleteCred = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+exports.deleteAll = async(req, res) => {
+  try{
+    await credentialServiceVar.deleteAll();
+    res.json({status:"Deleted all the data"})
+  }
+  catch{
+    res.status(500).json({error:err.message});
+  }
+}

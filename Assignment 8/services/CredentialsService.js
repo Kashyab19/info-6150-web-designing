@@ -1,3 +1,4 @@
+const e = require("express");
 const CredentialsModel = require("../models/Credentials");
  
 exports.getAllCreds = async () => {
@@ -18,3 +19,7 @@ exports.updateCreds= async (email, creds) => {
 exports.deleteCred = async (email) => {
   return await CredentialsModel.findOneAndDelete({email:email});
 };
+
+exports.deleteAll = async() => {
+  return await CredentialsModel.deleteMany();
+}
