@@ -13,5 +13,7 @@ Folder Structure of Back-end:
 Styling:
 - Done using React Bootstrap and custom CSS for gradients
 
+git clone --branch <branchname> <remote-repo-url>
+
 
 
